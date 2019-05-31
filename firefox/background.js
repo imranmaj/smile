@@ -5,8 +5,6 @@ browser.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
         return;
     }
     if (tab.url.includes("www.amazon.com")) {
-        console.log(tabId);
-        console.log(tab.url);
         browser.tabs.update(
             tabId,
             {
